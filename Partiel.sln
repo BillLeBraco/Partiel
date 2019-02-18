@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partiel.UI.Android", "Parti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partiel.UI.iOS", "Partiel.UI\Partiel.UI.iOS\Partiel.UI.iOS.csproj", "{95DFCE6D-0CC2-46D8-B333-8E766CD2502F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partiel.UI", "Partiel.UI\Partiel.UI\Partiel.UI.csproj", "{B25D9231-1807-43E4-A30B-4AD5DCB2625D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Partiel.UI", "Partiel.UI\Partiel.UI\Partiel.UI.csproj", "{B25D9231-1807-43E4-A30B-4AD5DCB2625D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partiel.WebUI", "Partiel.WebUI\Partiel.WebUI.csproj", "{66712703-E2E6-4A81-9EC6-E0990F7B8340}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{BF7ADE12-7472-45DD-87DB-AD637EEA5E59}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partiel.Context", "Partiel.Context\Partiel.Context.csproj", "{3157D130-717C-49C5-98BD-075F670AD243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partiel.ContextTests", "Partiel.ContextTests\Partiel.ContextTests.csproj", "{CA4B20D8-308B-4028-A863-B848736671B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +127,18 @@ Global
 		{3157D130-717C-49C5-98BD-075F670AD243}.Release|iPhone.Build.0 = Release|Any CPU
 		{3157D130-717C-49C5-98BD-075F670AD243}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{3157D130-717C-49C5-98BD-075F670AD243}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Release|iPhone.Build.0 = Release|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{CA4B20D8-308B-4028-A863-B848736671B2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

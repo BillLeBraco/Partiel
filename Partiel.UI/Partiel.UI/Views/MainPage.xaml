@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Partiel.UI"
+             x:Class="Partiel.UI.MainPage"
+             BindingContext="{Binding Main,Source={StaticResource Locator}}">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+      <!--#endregion-->
+        <Entry Placeholder="Adresse de départ"  Text="{Binding Adresse,Mode=TwoWay}" ></Entry>
+        <Button Command="{Binding Path=SearchAdressCommand}" Text="Rechercher"></Button>
+
+        <Label Text="{Binding Coordonnees}"></Label>
+    </StackLayout>
+
+</ContentPage>

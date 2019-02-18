@@ -1,0 +1,46 @@
+﻿@model Partiel.WebUI.Models.IndexModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="container">
+
+   <select id="selectEvents">
+       @foreach (var item in Model.Events)
+       {
+       <option value="@item.Id">@item.Name</option>
+       }
+
+   </select>
+
+    <select  id="selectStudents">
+
+    </select>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+    $("#selectEvents").change(function () {
+        var idEvent =  $("#selectEvents").val();
+    const url = 'http://localhost:53847/api/events/get/' + idEvent + '/participants';
+
+    fetch(url)
+        .then((resp) => resp.json())
+        .then(function (data) {
+            $(data).each(function (i, item) {
+                document.getElementById("selectStudents").innerHTML = "";
+                $("#selectStudents").append("<option value='" + item.FirstName + "'>" + item.FirstName + " " + item.LastName + "</option>")
+
+            })
+                document.getElementById("tauxAccomplissement").innerHTML = "100";
+             
+
+        })
+        .catch(function (error) {
+            console.log(JSON.stringify(error));
+        });
+
+    })
+</script>
